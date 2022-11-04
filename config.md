@@ -1,7 +1,7 @@
 <!--
 Add here global page variables to use throughout your website.
 -->
-@def prepath = "MRO-stuff"
+
 +++
 author = "Kaj Wiik"
 mintoclevel = 2
@@ -17,7 +17,7 @@ ignore = ["node_modules/"]
 generate_rss = true
 website_title = "MRO-stuff"
 website_descr = "Personal memos related to Metsähovi Radio Observatory"
-website_url   = "https://kajwiik.github.io/MRO-stuff/"
+website_url   = "https://kajwiik.github.io"
 prepath = "MRO-stuff"
 +++
 
