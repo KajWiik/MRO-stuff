@@ -18,6 +18,7 @@ generate_rss = true
 website_title = "MRO-stuff"
 website_descr = "Personal memos related to Metsähovi Radio Observatory"
 website_url   = "https://kajwiik.github.io/MRO-stuff"
+prepath = "MRO-stuff"
 +++
 
 <!--
