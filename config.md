@@ -1,11 +1,11 @@
 <!--
 Add here global page variables to use throughout your website.
 -->
+
 +++
 author = "Kaj Wiik"
 mintoclevel = 2
 
-@def prepath = "myWebsite"
 
 # Add here files or directories that should be ignored by Franklin, otherwise
 # these files might be copied and, if markdown, processed by Franklin which
@@ -18,9 +18,6 @@ generate_rss = true
 website_title = "MRO-stuff"
 website_descr = "Personal memos related to Metsähovi Radio Observatory"
 website_url   = "https://kajwiik.github.io/MRO-stuff/"
-+++
-
-+++
 prepath = "MRO-stuff"
 +++
 
