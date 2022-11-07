@@ -1,11 +1,19 @@
-# Stability requirement for a two total power receiver chains
+# Stability calculations of a two beam differencing total power receiver
 
-Minimum detectable noise temperature for a total power radiometer:
+## Basics 
+
+Total power output of a radiometer for an input noise temperature of $T$ Kelvins can be defined as 
+$$
+P = g \cdot T
+$$
+where $g$ is conversion factor or _gain_ of the radiometer.
+
+The minimum detectable noise temperature or RMS noise of a total power radiometer is
 $$
 \Delta T_{\mathrm{min}} = \frac{T_{\mathrm{s}}}{\sqrt{\Delta t \cdot B}}
 $$
 
-With e.g. $T_{\mathrm{s}} = 50 \, \mathrm{K}$, $B = 8 \, \mathrm{GHz}$ and $\Delta t = 1 \mathrm{s}$, $\Delta T_{\mathrm{min}} = 14 \mathrm{mK}$.
+With e.g. $T_{\mathrm{s}} = 100 \, \mathrm{K}$, $B = 8 \, \mathrm{GHz}$ and $\Delta t = 1 \, \mathrm{s}$, $\Delta T_{\mathrm{min}} = 28 \, \mathrm{mK}$ which translates to about 1 Jy for Metsähovi 13.7 m antenna.
 
 If the difference between chains for an equal input noise temperature should be less than $\Delta T_{\mathrm{min}}$, the relative gain difference should be less than
 
