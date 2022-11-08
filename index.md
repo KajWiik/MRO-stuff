@@ -3,6 +3,6 @@
 
 # Various memos about radio astronomy related to Metsähovi Radio Observatory
 
-   * [Stability requirement of a dual chain radiometer](dual-beam-stability)
-   * [Dual beam linear feed polarimeter](dual-beam-polarimeter)
+   * [Stability calculations of a two beam continuous comparison total power radiometer](dual-beam-stability)
+   * [Dual beam linear feed polarimeter (WIP)](dual-beam-polarimeter)
 
