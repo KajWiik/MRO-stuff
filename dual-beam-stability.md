@@ -65,7 +65,7 @@ E.g. for $t$ = 1 s, $B$ = 8 GHz, $(k - 1) \sim 10^{-5} = 50$ dB or $k =
 
 If the gains of the branches can be measured, the difference can be naturally
 compensated. Another way is to use fast beam switching (Dicke-related
-method) or continuous comparison (or pseudocorrelation) scheme where
+method) or continuous comparison (pseudocorrelation) scheme where
 the gain variations are subjected to the difference of
 the noise temperature of the brances, like
 
@@ -76,7 +76,7 @@ $$
 yielding much relaxed demands for the stability of the
 amplifiers. This is the reason for popularity of continuous comparison
 radiometers especially in applications that require high level of
-accuracy and sensitivity (e.g. WMAP, Planck).
+accuracy and sensitivity (e.g. WMAP, PLANCK).
 
 
 
@@ -112,7 +112,7 @@ Also the required power level is much lower due to the narrowband
 detection.
 
 For example if the detection is done in 1 Hz band (i.e. every second)
-for the figures in the previous example, the required power level is 1
+with the values in the previous example, the required power level is 1
 Hz/8 GHz, i.e. the effect to the system temperature is in the order of
 $1/8e6 \cdot 100 \, \mathrm{K} = 12 \mu \mathrm{K}$, which is
 negligible.
@@ -120,21 +120,35 @@ negligible.
 However, it should be noted that one pilot tone probes only one
 frequency of the passband, the passband may (and will) vary because of
 changing reflections from the subreflector support structure and the
-radome.
+radome. Maybe a large number of tones should be used, approaching the
+noise diode calibration method.
 
-## Inherent gain stability of HEMT amplifiers
+### Calibration using the sky emission
 
-How necessary the calibration actually is? If the temperatures are kept stable, the gains stay stable too, right? Unfortunately there are semiconductor level processess inherent to the HEMT structure that create 1/f-type noise in gain.
+If both beams are pointing to a blank sky, difference should of
+course be zero if the chain gains and noise temperatures are
+equal. This can be used to estimate the gains.
 
-In [this](https://upcommons.upc.edu/bitstream/handle/2117/1047/very%20low%20noise01440723.pdf) article (page 2059) this 
+In the widely used "ON-ON" observation method, one of the beams is
+pointing to the source and the other to the blank sky. In the second
+phase, the order is changed and the gain difference can be estimated
+*if* the gains have stayed stable enough (and/or the drift is linear)
+during the 'ON-ON' period.
 
-So, to keep gain less than the radiometer RMS noise so that differences are undetectable is a formidable problem.
+## Inherent gain stability of HEMT amplifiers, the conclusions
 
-With e.g. $T_{\mathrm{s}} = 100 \, \mathrm{K}$, $B = 8 \, \mathrm{GHz}$ and $\Delta t = 1 \, \mathrm{s}$, $\Delta T_{\mathrm{min}} = 28 \, \mathrm{mK}$ which translates to about 1 Jy for Metsähovi 13.7 m antenna.
-If the difference between chains for an equal input noise temperature should be less than $\Delta T_{\mathrm{min}}$, the relative gain difference should be less than
+How necessary the calibration actually is? If the temperatures are
+kept stable, the gains stay stable too, right? Or could the 'ON-ON'
+observation method be used for tackling the drifts?
 
+Unfortunately there are semiconductor level processess inherent to the
+HEMT structure that create 1/f-type noise in gain so independent from
+temperature, there will be always gain drifts.
 
- and relative stability requirement is $0.0004$ or $1/2830$ or 0.0015 dB
-
-
-https://upcommons.upc.edu/bitstream/handle/2117/1047/very%20low%20noise01440723.pdf Page 259
+In
+[this](https://upcommons.upc.edu/bitstream/handle/2117/1047/very%20low%20noise01440723.pdf)
+(page 2059) article the gain drift of PLANCK LFI amplifiers are characterised
+as a function of time. It is found that these amplifiers have the 1/f
+knee period at about 4 seconds, so the calibration period should be in
+the order of seconds (for these amplifiers) to keep the effect
+of drifts negligible.
