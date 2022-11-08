@@ -65,5 +65,5 @@ $$
 k = 1 - \frac{1}{\sqrt{\Delta t \cdot B}}
 $$
 
-E.g. for $t$ = 1 s, $B$ = 8 GHz, $(1 - k) \sim 1 \cdot 10^{-5} = 50$ dB or $k = 
-0.00005$ dB.
+E.g. for $t$ = 1 s, $B$ = 8 GHz, $(1 - k) \sim 1 \cdot 10^{-5} = -50$ dB or $k = 
+-0.00005$ dB.
