@@ -109,21 +109,24 @@ average in the backend as long as it is spectrally clean and does not
 saturate the receiver.
 
 Also the required power level is much lower due to the narrowband
-detection:
+detection.
 
-E.g. if the detection is done in 1 Hz band for the figures in the previous
-example, the required power level is 1 Hz/8 GHz, i.e. the effect to the
-system temperature is in the order of $1/8e6 \cdot 100  \, \mathrm{K}
-= 12 \mu \mathrm{K}$, which is negligible.
+For example if the detection is done in 1 Hz band (i.e. every second)
+for the figures in the previous example, the required power level is 1
+Hz/8 GHz, i.e. the effect to the system temperature is in the order of
+$1/8e6 \cdot 100 \, \mathrm{K} = 12 \mu \mathrm{K}$, which is
+negligible.
 
-However, it must be noted that one pilot tone probes only one
+However, it should be noted that one pilot tone probes only one
 frequency of the passband, the passband may (and will) vary because of
 changing reflections from the subreflector support structure and the
 radome.
 
 ## Inherent gain stability of HEMT amplifiers
 
+How necessary the calibration actually is? If the temperatures are kept stable, the gains stay stable too, right? Unfortunately there are semiconductor level processess inherent to the HEMT structure that create 1/f-type noise in gain.
 
+In [this](https://upcommons.upc.edu/bitstream/handle/2117/1047/very%20low%20noise01440723.pdf) article (page 2059) this 
 
 So, to keep gain less than the radiometer RMS noise so that differences are undetectable is a formidable problem.
 
